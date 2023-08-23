@@ -17,7 +17,7 @@ import requests
 
 class ThingsBoard:
     """
-    CML ThinksBoard wrapper.
+    CML ThingsBoard wrapper.
     """
 
     def __init__(self):
@@ -104,7 +104,7 @@ class ThingsBoard:
         params = {"pageSize": 100, "page": 0}
         response = self.http_get(url, params=params)
         if response["totalElements"] < 1:
-            raise Exception("No device has not been found!")
+            raise Exception("No device has been found!")
 
         return response["data"]
 
@@ -119,3 +119,7 @@ class ThingsBoard:
     def get_estudna_level(self, device_id: str):
         values = self.get_device_values(device_id, "ain1")
         return values["ain1"][0]["value"]
+
+    def get_estudna_dout1(self, device_id: str):
+        values = self.get_device_values(device_id, "dout1")
+        return values["dout1"][0]["value"]
