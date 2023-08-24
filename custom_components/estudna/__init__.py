@@ -58,7 +58,7 @@ class EStudnaSensor(SensorEntity):
 
     @property
     def unit_of_measurement(self) -> str:
-        return LENGTH_METERS
+        return ''
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
