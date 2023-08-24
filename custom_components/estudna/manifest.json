@@ -1,15 +1,16 @@
 {
-  "domain": "estudna",
-  "name": "eSTUDNA",
+  "domain": "estudna-sea",
+  "name": "eSTUDNA SEA",
   "codeowners": [
-    "@nijel"
+    "@nijel",
+    "@davforet"
   ],
   "config_flow": true,
   "dependencies": [],
-  "documentation": "https://github.com/nijel/hass-estudna",
+  "documentation": "https://github.com/davforet/hass-estudna",
   "homekit": {},
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/nijel/hass-estudna/issues",
+  "issue_tracker": "https://github.com/davforet/hass-estudna-issues",
   "requirements": [
     "requests",
     "PyJWT[crypto]"
