@@ -1,3 +1,3 @@
 """Constants for the estudna integration."""
 
-DOMAIN = "estudna"
+DOMAIN = "estudna SEA"
