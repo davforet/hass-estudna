@@ -26,7 +26,7 @@ class EStudnaSensor(SensorEntity):
     async def async_update(self) -> None:
         try:
             self._state = await self._hass.async_add_executor_job(
-                self._thingsboard.get_estudna_dout1, self.unique_id
+                self._thingsboard.get_estudna_level, self.unique_id
             )
         except IndexError:
             self._state = None
